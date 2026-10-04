@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naivaidya Pare — Next-Gen Full-Stack & Database Engineer</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts: Inter & JetBrains Mono for Code Console -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark">
+
+  <!-- BACKGROUND INTERACTIVE ANIMATED CANVAS -->
+  <canvas id="heroCanvas"></canvas>
+
+  <!-- GLASS HEADER / NAVIGATION -->
+  <header class="glass-nav">
+    <div class="logo">
+      <div class="logo-avatar">NP</div>
+      <div class="logo-text">
+        <span class="name">Naivaidya Pare</span>
+        <span class="role-badge"><i class="fas fa-bolt"></i> Full-Stack Architect</span>
+      </div>
+    </div>
+    
+    <div class="header-right"> 
+      <button id="soundBtn" onclick="toggleSound()" title="Toggle Sound Feedback" class="icon-btn">
+        <i class="fas fa-volume-up"></i>
+      </button>
+
+      <button id="themeBtn" onclick="toggleTheme()" title="Toggle Dark/Light Theme" class="icon-btn">
+        <i class="fas fa-sun"></i>
+      </button>
+      
+      <div class="menu-toggle" onclick="toggleMenu(event)">
+        <i class="fas fa-bars"></i>
+      </div>
+      
+      <nav id="menuBox">
+        <a href="#Home" onclick="closeMenu()"><i class="fas fa-home"></i> Home</a>
+        <a href="#About" onclick="closeMenu()"><i class="fas fa-user"></i> About</a>
+        <a href="#Skills" onclick="closeMenu()"><i class="fas fa-code"></i> Tech Stack</a>
+        <a href="#CodeTerminal" onclick="closeMenu()"><i class="fas fa-terminal"></i> Code Console</a>
+        <a href="#Projects" onclick="closeMenu()"><i class="fas fa-project-diagram"></i> Projects</a>
+        <a href="#Education" onclick="closeMenu()"><i class="fas fa-graduation-cap"></i> Education</a>
+        <a href="#Work" onclick="closeMenu()"><i class="fas fa-briefcase"></i> Experience</a>
+        <a href="#Contact" onclick="closeMenu()"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="#Submissions" onclick="closeMenu()"><i class="fas fa-database"></i> Live Database</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" id="Home">
+    <div class="hero-container">
+      
+      <div class="hero-content">
+        <div class="status-pill">
+          <span class="status-dot"></span> 🟢 Available for Full-Stack & Database Engineering Roles
+        </div>
+        
+        <h1 class="hero-title">
+          Engineering <span class="gradient-text">Next-Gen</span> Digital Solutions
+        </h1>
+        
+        <h2 class="hero-subtitle">
+          I'm <strong>Naivaidya Pare</strong> — I build <span id="typing"></span><span class="cursor">|</span>
+        </h2>
+        
+        <p class="hero-bio">
+          Crafting ultra-responsive front-end web graphics, high-throughput Python REST APIs, and dual-relational & NoSQL database systems (MySQL + MongoDB) engineered for microsecond speed.
+        </p>
+        
+        <div class="hero-cta-group">
+          <a href="#Contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+          <a href="#CodeTerminal" class="btn btn-glass"><i class="fas fa-terminal"></i> Try Live Code Terminal</a>
+          <a href="#Submissions" class="btn btn-outline"><i class="fas fa-database"></i> Live Database</a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://wa.me/919876543210" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://t.me" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+          <a href="mailto:naivaidya.pare@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="avatar-card-wrapper">
+          <div class="avatar-glow"></div>
+          <div class="avatar-card">
+            <div class="avatar-img-placeholder">
+              <span>NP</span>
+            </div>
+            <h3 class="card-name">Naivaidya Pare</h3>
+            <p class="card-title">Software & Database Architect</p>
+            <div class="card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Flask API</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="location-badge">
+              <i class="fas fa-map-marker-alt"></i> Madhya Pradesh, India
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAIN WRAPPER -->
+  <main class="main-wrapper">
+    
+    <!-- ABOUT SECTION -->
+    <section id="About" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">PROFILE & VISION</span>
+        <h2 class="section-heading">About Naivaidya Pare</h2>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-card main-about">
+          <h3><i class="fas fa-microchip"></i> Full-Stack & Database Engineering Specialist</h3>
+          <p>
+            Based in Madhya Pradesh, India, I specialize in engineering robust web software. From creating sleek, animated front-end user interfaces to architecting high-concurrency Python Flask APIs and dual-engine data storage (MySQL & MongoDB), I build complete end-to-end web applications.
+          </p>
+          <div class="about-info-list">
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span class="label">Email</span>
+                <span class="val">naivaidya.pare@example.com</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span class="label">Location</span>
+                <span class="val">Balaghat, Madhya Pradesh, India</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-server"></i>
+              <div>
+                <span class="label">Primary Stack</span>
+                <span class="val">Python • Flask • MySQL • MongoDB • JS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-card stats-about">
+          <div class="mini-stat">
+            <h4 class="stat-number">100%</h4>
+            <p class="stat-label">API Speed Verified</p>
+          </div>
+          <div class="mini-stat">
+            <h4 class="stat-number">Dual</h4>
+            <p class="stat-label">MySQL & MongoDB DB</p>
+          </div>
+          <div class="mini-stat">
+            <h4 class="stat-number">⚡ Fast</h4>
+            <p class="stat-label">Microsecond WAL DB Engine</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CODE TERMINAL / CONSOLE WIDGET -->
+    <section id="CodeTerminal" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">LIVE INTERACTIVE FUNCTION</span>
+        <h2 class="section-heading">Interactive Python API Console</h2>
+      </div>
+
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="terminal-title"><i class="fas fa-terminal"></i> naivaidya_backend_engine.py</span>
+          <button class="btn btn-sm btn-primary" onclick="runLiveCode()"><i class="fas fa-play"></i> Execute Code</button>
+        </div>
+        <div class="terminal-body">
+          <pre class="code-editor"><code id="codeSnippet"># Naivaidya Pare's High-Performance API Engine
+import flask, mysql.connector, pymongo
+
+app = flask.Flask(__name__)
+
+@app.route('/api/status')
+def get_status():
+    return {
+        "developer": "Naivaidya Pare",
+        "role": "Full-Stack Engineer",
+        "mysql_relational_status": "ONLINE",
+        "mongodb_nosql_status": "ONLINE",
+        "response_time": "0.15ms"
+    }
+
+print("Running Naivaidya's API Server...")</code></pre>
+          <div class="terminal-output" id="terminalOutput">
+            <span class="prompt">$</span> Click "Execute Code" to test Naivaidya Pare's live Python API response in real-time...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK & ANIMATED PROGRESS BARS -->
+    <section id="Skills" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">COMPETENCIES</span>
+        <h2 class="section-heading">Tech Stack & Skill Levels</h2>
+      </div>
+
+      <div class="skills-categories">
+        
+        <!-- Frontend Skills -->
+        <div class="category-block">
+          <h3><i class="fas fa-desktop"></i> Front-End Development</h3>
+          <div class="skill-progress-list">
+            <div class="progress-item">
+              <div class="progress-info"><span>HTML5 & CSS3</span><span>95%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 95%"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-info"><span>JavaScript (ES6+)</span><span>90%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-info"><span>ReactJS</span><span>85%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Skills -->
+        <div class="category-block">
+          <h3><i class="fas fa-server"></i> Back-End & APIs</h3>
+          <div class="skill-progress-list">
+            <div class="progress-item">
+              <div class="progress-info"><span>Python & Flask</span><span>92%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 92%"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-info"><span>Java</span><span>82%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 82%"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-info"><span>PHP</span><span>80%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 80%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database Skills -->
+        <div class="category-block">
+          <h3><i class="fas fa-database"></i> Databases & Storage</h3>
+          <div class="skill-progress-list">
+            <div class="progress-item">
+              <div class="progress-info"><span>MySQL (Relational SQL)</span><span>90%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-info"><span>MongoDB (NoSQL Document)</span><span>88%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 88%"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-info"><span>SQLite WAL Engine</span><span>95%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 95%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FILTERABLE PROJECTS SHOWCASE -->
+    <section id="Projects" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">PORTFOLIO</span>
+        <h2 class="section-heading">Featured Projects</h2>
+      </div>
+
+      <!-- Project Category Filters -->
+      <div class="project-filters">
+        <button class="filter-btn active" onclick="filterProjects('all')">All Projects</button>
+        <button class="filter-btn" onclick="filterProjects('fullstack')">Full-Stack</button>
+        <button class="filter-btn" onclick="filterProjects('database')">Database Systems</button>
+        <button class="filter-btn" onclick="filterProjects('api')">APIs</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        
+        <div class="project-card" data-category="fullstack database">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-database"></i></div>
+            <div class="project-links">
+              <a href="#Submissions" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Dual-DB Full-Stack Registration System</h3>
+          <p class="project-desc">
+            A real-time web application built with HTML, CSS, JS, and Python Flask. Features concurrent persistence in MySQL and MongoDB with automatic failover.
+          </p>
+          <div class="project-tech">
+            <span>Python Flask</span>
+            <span>MySQL</span>
+            <span>MongoDB</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="fullstack">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="project-links">
+              <a href="#Home" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Interactive Cyber Portfolio Platform</h3>
+          <p class="project-desc">
+            Next-gen portfolio web application with interactive canvas particle animations, dark/light mode toggle, dynamic typing subtitle, and REST API integrations.
+          </p>
+          <div class="project-tech">
+            <span>HTML5 Canvas</span>
+            <span>CSS3</span>
+            <span>JS ES6</span>
+            <span>REST API</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="api database">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-bolt"></i></div>
+            <div class="project-links">
+              <a href="#CodeTerminal" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">RESTful API Backend Engine</h3>
+          <p class="project-desc">
+            High-throughput Python backend service exposing CORS-enabled JSON endpoints for registration processing, health diagnostics, and dynamic skill fetching.
+          </p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Flask REST</span>
+            <span>SQLite WAL</span>
+            <span>CORS</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION & EXPERIENCE TIMELINE -->
+    <div class="two-column-grid">
+      
+      <!-- EDUCATION -->
+      <section id="Education" class="section-container">
+        <div class="section-header">
+          <span class="section-tag">ACADEMIC JOURNEY</span>
+          <h2 class="section-heading">Education</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="timeline-content">
+              <h3>Diploma in Computer Science</h3>
+              <p class="timeline-date">2025 – 2027 | Currently Pursuing</p>
+              <p class="timeline-desc">Specializing in Data Structures, Web Engineering, Database Management Systems, and Software Architecture.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-school"></i></div>
+            <div class="timeline-content">
+              <h3>12th (Intermediate - Science & CS)</h3>
+              <p class="timeline-date">2024 – 2025 | Completed</p>
+              <p class="timeline-desc">Completed high school specialization with focus on Mathematics, Physics, and Computer Science fundamentals.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="Work" class="section-container">
+        <div class="section-header">
+          <span class="section-tag">CAREER PATH</span>
+          <h2 class="section-heading">Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item accent-timeline">
+            <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="timeline-content">
+              <h3>Web Development Internship</h3>
+              <p class="timeline-date">Full-Stack Development</p>
+              <p class="timeline-desc">Architected RESTful APIs with Python Flask, MySQL, and MongoDB. Created responsive front-end components and database connectors.</p>
+            </div>
+          </div>
+          <div class="timeline-item accent-timeline">
+            <div class="timeline-icon"><i class="fas fa-user-cog"></i></div>
+            <div class="timeline-content">
+              <h3>Freelance Web Developer</h3>
+              <p class="timeline-date">Full-Stack & Database Projects</p>
+              <p class="timeline-desc">Delivered custom web applications, responsive portfolio sites, and relational/document database solutions for clients.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- REGISTRATION FORM SECTION -->
+    <section id="Contact" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">GET IN TOUCH</span>
+        <h2 class="section-heading">Registration & Contact Form</h2>
+      </div>
+
+      <div class="contact-box">
+        <form id="contactForm" class="styled-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name"><i class="fas fa-user"></i> Your Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Naivaidya Pare" required>
+            </div>
+            <div class="form-field">
+              <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+              <input type="email" id="email" name="email" placeholder="naivaidya@example.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="message"><i class="fas fa-comment-alt"></i> Message / Query</label>
+            <textarea id="message" name="message" rows="4" placeholder="Enter your project details or message..."></textarea>
+          </div>
+          <button type="submit" id="submitBtn" class="btn btn-primary btn-block">
+            <i class="fas fa-paper-plane"></i> Submit Registration
+          </button>
+        </form>
+        <div id="formStatus" class="status-toast"></div>
+      </div>
+    </section>
+
+    <!-- LIVE SUBMISSIONS & FULL DATABASE MANAGEMENT DASHBOARD -->
+    <section id="Submissions" class="section-container">
+      <div class="db-dashboard-header">
+        <div>
+          <span class="section-tag">BACKEND DATABASE MANAGEMENT ENGINE</span>
+          <h2 class="section-heading">Submissions DB Engine</h2>
+        </div>
+        <div class="db-status-pill" id="dbStatusPill">
+          <span class="pulse-dot"></span>
+          <span id="dbStatusText">Connecting to Database...</span>
+        </div>
+      </div>
+
+      <div class="db-controls-bar">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" id="searchSubmissions" placeholder="Search by name, email, or message..." onkeyup="filterSubmissions()">
+        </div>
+        <button class="btn btn-sm btn-outline" onclick="loadSubmissions()">
+          <i class="fas fa-sync-alt"></i> Refresh Data
+        </button>
+      </div>
+
+      <div class="submissions-grid" id="submissionsList">
+        <div class="loading-state">
+          <i class="fas fa-spinner fa-spin"></i> Fetching records from MySQL & MongoDB backend...
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="logo-avatar">NP</div>
+        <span>Naivaidya Pare</span>
+      </div>
+      <p>&copy; 2026 <strong>Naivaidya Pare</strong>. All Rights Reserved.</p>
+      <p class="footer-tech">Engineered with HTML5 • CSS3 • JavaScript • Python Flask • MySQL • MongoDB</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
